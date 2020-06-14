@@ -49,6 +49,7 @@ jobs:
       before_script: skip
       install: skip
       script:
+        - composer install
         - mkdir -p /tmp/ps-release
         - php tools/build/CreateRelease.php --destination-dir=/tmp/ps-release
         - cd /tmp/ps-release
@@ -66,6 +67,7 @@ jobs:
           all_branches: true
 
 before_install:
+  - composer install
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_10.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :10 -ac -screen 0 1600x1200x16
   # Avoid Composer authentication issues
   - if [[ "$TRAVIS_REPO_SLUG" = PrestaShop/PrestaShop ]]; then cp travis-scripts/.composer-auth.json ~/.composer/auth.json; fi;
