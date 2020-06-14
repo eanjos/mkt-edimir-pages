@@ -8,20 +8,20 @@
 #.cache/
 #
 ## Cache
-#/cache/*
-#!/cache/.htaccess
-#!/cache/cachefs/index.php
-#!/cache/deprecated.txt
-#!/cache/index.php
-#!/cache/purifier/index.php
-#!/cache/push/activity
-#!/cache/push/index.php
-#!/cache/push/trends
-#!/cache/sandbox/index.php
-#!/cache/smarty/cache/index.php
-#!/cache/smarty/compile/index.php
-#!/cache/smarty/index.php
-#!/cache/tcpdf/index.php
+/cache/*
+!/cache/.htaccess
+!/cache/cachefs/index.php
+!/cache/deprecated.txt
+!/cache/index.php
+!/cache/purifier/index.php
+!/cache/push/activity
+!/cache/push/index.php
+!/cache/push/trends
+!/cache/sandbox/index.php
+!/cache/smarty/cache/index.php
+!/cache/smarty/compile/index.php
+!/cache/smarty/index.php
+!/cache/tcpdf/index.php
 #
 ## Download
 #/download/*
@@ -111,7 +111,7 @@
 #!/admin-dev/themes/new-theme/public/theme.rtlfix
 #!/admin-dev/themes/default/public/theme.rtlfix
 #
-#themes/*/cache/*
+themes/*/cache/*
 #themes/core.js.map
 #themes/core.js
 #
@@ -177,9 +177,9 @@
 #/build/
 #/phpunit.xml
 #/var/*
-#!/var/cache
-#/var/cache/*
-#!var/cache/.gitkeep
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
 #!/var/logs
 #/var/logs/*
 #!var/logs/.gitkeep
