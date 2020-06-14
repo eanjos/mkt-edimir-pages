@@ -71,7 +71,7 @@ npm-debug.log.*
 
 /vendor/*
 /docs/phpdoc-sf/
-/composer.lock
+#/composer.lock
 *.hot-update.js
 *.hot-update.json
 
