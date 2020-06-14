@@ -69,7 +69,7 @@ npm-debug.log.*
 /upload/*
 !/upload/.htaccess
 
-/vendor/*
+#/vendor/*
 /docs/phpdoc-sf/
 #/composer.lock
 *.hot-update.js

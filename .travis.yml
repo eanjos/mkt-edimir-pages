@@ -89,7 +89,7 @@ install:
       bash travis-scripts/install-prestashop;
     fi
 
-#script:
+script:
 #  - if [ "$PRESTASHOP_TEST_TYPE" = "unit" ]; then
 #        bash tests/check_file_syntax.sh;
 #    fi
@@ -107,10 +107,10 @@ install:
 #        bash tests/check_integration.sh;
 #    fi
 #
-#  - if [ "$PRESTASHOP_TEST_TYPE" = "sanity" ]; then
-#        make assets;
-#        bash tests/check_sanity.sh;
-#    fi
+  - if [ "$PRESTASHOP_TEST_TYPE" = "sanity" ]; then
+        make assets;
+        bash tests/check_sanity.sh;
+    fi
 
 after_script:
   - sudo cat /var/log/apache2/error.log
