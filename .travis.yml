@@ -68,7 +68,8 @@ jobs:
 
 before_install:
   - composer install
-  - php -d memory_limit=-1 composer.lock update symfony/symfony --with-dependencies
+  - php composer.phar --self-update
+  - php -d memory_limit=-1 composer.phar update symfony/symfony --with-dependencies
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_10.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :10 -ac -screen 0 1600x1200x16
   # Avoid Composer authentication issues
   - if [[ "$TRAVIS_REPO_SLUG" = PrestaShop/PrestaShop ]]; then cp travis-scripts/.composer-auth.json ~/.composer/auth.json; fi;
