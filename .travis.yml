@@ -67,7 +67,8 @@ jobs:
           all_branches: true
 
 before_install:
-  - composer install
+  - composer self-update
+  - composer install --prefer-dist
   - php composer.phar --self-update
   - php -d memory_limit=-1 composer.phar update symfony/symfony --with-dependencies
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_10.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :10 -ac -screen 0 1600x1200x16
