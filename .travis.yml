@@ -22,8 +22,8 @@ os: linux
 dist: xenial
 
 php:
-#  - 7.1
-#  - 7.2
+  - 7.1
+  - 7.2
   - 7.3
 
 env:
@@ -51,6 +51,7 @@ jobs:
       script:
         - composer install
         - mkdir -p /tmp/ps-release
+        - php -d memory_limit=-1 composer.phar update symfony/symfony --with-dependencies
         - php tools/build/CreateRelease.php --destination-dir=/tmp/ps-release
         - cd /tmp/ps-release
           && today=`date +%Y-%m-%d-`; for i in *; do mv $i $today$TRAVIS_BRANCH-$i; done
@@ -68,6 +69,7 @@ jobs:
 
 before_install:
   - composer install
+  - php -d memory_limit=-1 composer.phar update symfony/symfony --with-dependencies
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_10.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :10 -ac -screen 0 1600x1200x16
   # Avoid Composer authentication issues
   - if [[ "$TRAVIS_REPO_SLUG" = PrestaShop/PrestaShop ]]; then cp travis-scripts/.composer-auth.json ~/.composer/auth.json; fi;
