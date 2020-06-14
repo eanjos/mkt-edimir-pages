@@ -30,10 +30,10 @@ env:
   global:
     - SYMFONY_DEPRECATIONS_HELPER=disabled
     - DISABLE_DEBUG_TOOLBAR=1
-#  jobs:
+  jobs:
 #    - PRESTASHOP_TEST_TYPE=unit
 #    - PRESTASHOP_TEST_TYPE=integration
-#    - PRESTASHOP_TEST_TYPE=sanity
+    - PRESTASHOP_TEST_TYPE=sanity
 
 stages:
   - name: deploy

@@ -187,7 +187,7 @@ themes/default-bootstrap/modules/*/mails/*
 /var/sessions/*
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
-/vendor/
+#/vendor/
 /web/bundles/
 
 
