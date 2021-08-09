@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af2b3c9911831936fa96e87c2baed778",
+    "content-hash": "608b37e9a9c63323b9e88d632dc67d5d",
     "packages": [
         {
             "name": "beberlei/doctrineextensions",
@@ -1022,6 +1022,7 @@
                 "cache",
                 "caching"
             ],
+            "abandoned": true,
             "time": "2019-11-29T11:22:01+00:00"
         },
         {
@@ -1525,6 +1526,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-01-08T19:53:19+00:00"
         },
         {
@@ -1908,6 +1910,7 @@
                 "Guzzle",
                 "cache"
             ],
+            "abandoned": true,
             "time": "2019-09-16T13:44:55+00:00"
         },
         {
@@ -3327,16 +3330,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.9",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0"
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/c5b00053770e1d72128252c62c2c1a12c26639f0",
-                "reference": "c5b00053770e1d72128252c62c2c1a12c26639f0",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/4d761c5334c790e45ef3245f0864b8955c562caa",
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa",
                 "shasum": ""
             },
             "require": {
@@ -3389,7 +3392,17 @@
                 "archive",
                 "tar"
             ],
-            "time": "2019-12-04T10:17:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-07-20T13:53:39+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -3484,23 +3497,23 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
-                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=4.4.0"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "<9"
             },
             "type": "class",
             "extra": {
@@ -3535,7 +3548,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2019-12-10T10:24:42+00:00"
+            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "pelago/emogrifier",
@@ -5033,6 +5046,7 @@
             ],
             "description": "PrestaShop module sekeywords",
             "homepage": "https://github.com/PrestaShop/sekeywords",
+            "abandoned": true,
             "time": "2017-01-30T15:46:25+00:00"
         },
         {
@@ -5385,6 +5399,7 @@
             ],
             "description": "PrestaShop module statsequipment",
             "homepage": "https://github.com/PrestaShop/statsequipment",
+            "abandoned": true,
             "time": "2017-01-31T17:01:36+00:00"
         },
         {
@@ -5449,6 +5464,7 @@
             ],
             "description": "PrestaShop module statslive",
             "homepage": "https://github.com/PrestaShop/statslive",
+            "abandoned": true,
             "time": "2017-02-02T08:18:06+00:00"
         },
         {
@@ -5513,6 +5529,7 @@
             ],
             "description": "PrestaShop module statsorigin",
             "homepage": "https://github.com/PrestaShop/statsorigin",
+            "abandoned": true,
             "time": "2018-01-29T19:17:31+00:00"
         },
         {
@@ -5737,6 +5754,7 @@
             ],
             "description": "PrestaShop module statsvisits",
             "homepage": "https://github.com/PrestaShop/statsvisits",
+            "abandoned": true,
             "time": "2018-01-29T18:08:52+00:00"
         },
         {
@@ -6171,6 +6189,7 @@
                 "configuration",
                 "distribution"
             ],
+            "abandoned": true,
             "time": "2019-06-18T15:43:58+00:00"
         },
         {
@@ -6292,6 +6311,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
+            "abandoned": "https://github.com/fabpot/local-php-security-checker",
             "time": "2019-11-01T13:20:14+00:00"
         },
         {
@@ -8435,12 +8455,12 @@
             "version": "v3.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mlively/Phake.git",
+                "url": "https://github.com/phake/Phake.git",
                 "reference": "3b7a6db62dfe7015a480fa966967df28b3cb239d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlively/Phake/zipball/3b7a6db62dfe7015a480fa966967df28b3cb239d",
+                "url": "https://api.github.com/repos/phake/Phake/zipball/3b7a6db62dfe7015a480fa966967df28b3cb239d",
                 "reference": "3b7a6db62dfe7015a480fa966967df28b3cb239d",
                 "shasum": ""
             },
@@ -9105,6 +9125,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -9867,12 +9888,12 @@
             "version": "1.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "573381c0a64f155a0d9a23f4b0c797194805b925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/573381c0a64f155a0d9a23f4b0c797194805b925",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/573381c0a64f155a0d9a23f4b0c797194805b925",
                 "reference": "573381c0a64f155a0d9a23f4b0c797194805b925",
                 "shasum": ""
             },
