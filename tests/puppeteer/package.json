@@ -45,7 +45,7 @@
     "puppeteer": "^3.0.2",
     "faker": "^4.1.0",
     "module-alias": "^2.2.2",
-    "pdfjs-dist": "^2.2.228"
+    "pdfjs-dist": "^2.16.105"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
